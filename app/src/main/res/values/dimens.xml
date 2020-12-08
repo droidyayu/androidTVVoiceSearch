@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="voice_search_icon_width">56dp</dimen>
+    <dimen name="voice_search_icon_height">56dp</dimen>
+    <dimen name="search_bar_text_size">14sp</dimen>
+</resources>

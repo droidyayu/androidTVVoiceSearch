@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:srcCompat="@drawable/voice_default" />
+
+    <RelativeLayout
+        android:id="@+id/lb_search_bar_items"
+        android:layout_width="@dimen/lb_search_bar_items_width"
+        android:layout_height="@dimen/voice_search_icon_height"
+        android:layout_marginStart="@dimen/lb_search_bar_items_margin_start"
+        android:layout_marginTop="@dimen/lb_search_bar_inner_margin_top"
+        android:layout_marginBottom="@dimen/lb_search_bar_inner_margin_bottom"
+        android:background="@drawable/bg_search_text"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <androidx.leanback.widget.SearchEditText
+            android:id="@+id/lb_search_text_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="@dimen/lb_search_bar_edit_text_margin_start"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:editable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="sans-serif"
+            android:hint="@string/lb_search_bar_hint"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/lb_tv_white"
+            android:textColorHint="@color/lb_tv_white"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/lb_search_bar_text_size" />
+    </RelativeLayout>
+</LinearLayout>
